@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import KosarSor from './KosarSor'
+import { KosarContext } from '../contexts/KosarContext';
 
-export default function Kosar(props) {
+export default function Kosar() {
+  
+  const { kosarLista } = useContext(KosarContext);
 
   return (
     <div>
@@ -13,7 +16,7 @@ export default function Kosar(props) {
           </tr>
         </thead>
         <tbody>
-          {props.kosarLista.map((elem, index)=>{
+          {kosarLista.map((elem, index)=>{
             return <KosarSor obj={elem} key={index}/>
           })}
         </tbody>
