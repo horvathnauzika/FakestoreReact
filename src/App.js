@@ -15,6 +15,11 @@ function App() {
         <header>
           <h1>Fakestore</h1>
         </header>
+        <aside className='col-lg-4'>
+            <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Keresés"></input>
+            </form>
+        </aside>
         <main className='row'>
           <aside className='col-lg-4'>
             <h4>Kosár</h4>

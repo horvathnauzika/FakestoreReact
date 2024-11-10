@@ -5,11 +5,11 @@ import { ApiContext } from '../contexts/ApiContext';
 
 export default function Vasarloter() {
 
-  const { kosarba } = useContext(KosarContext);
-  const { termekLista } = useContext(ApiContext);
+  const { kosarba } = useContext(KosarContext); // kosárba rakás funkció elérése a KosarContextből
+  const { termekLista } = useContext(ApiContext); 
 
   const kattintas = (adat) => {
-    kosarba(adat);
+    kosarba(adat); // itt rakjuk bele a kosárba a terméket
   };
 
   return (

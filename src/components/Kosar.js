@@ -4,7 +4,7 @@ import { KosarContext } from '../contexts/KosarContext';
 
 export default function Kosar() {
   
-  const { kosarLista } = useContext(KosarContext);
+  const { kosarLista } = useContext(KosarContext); // kosár tartalma a KosarContextből
 
   return (
     <div>
